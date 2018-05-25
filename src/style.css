@@ -6,16 +6,16 @@
 }
 
 #base {
-    border: 3px solid rgb(5, 141, 141);
+    border: 3px solid rgb(5, 141, 141); 
     border-radius: 12px;
     width: 700px;
-    height: 300px;
+    height: 350px;
     background-color: rgba(242, 242, 242);
     margin: auto;
     margin-top: 100px;
 }
 
-#root {
+#instructions {
     background-color: rgba(242, 242, 242);
 }
 
@@ -28,6 +28,20 @@ p {
     background-color: rgba(242, 242, 242)
 }
 
+#key {
+    background-color: rgba(242, 242, 242);
+    position: relative;
+}
+
+#keyBtn {
+    color: rgba(242, 242, 242);
+    cursor: pointer;
+}
+
+#keyText {
+    background-color: rgba(242, 242, 242);
+}
+
 #boxSet {
     background-color: rgba(242, 242, 242);
 }
@@ -36,18 +50,34 @@ p {
     width: 300px;
     height: 50px;
     color: rgb(255, 255, 255);
+    resize: none;
 }
 
 #codeBtn {
     background-color: rgb(5, 141, 141);
+    position: relative;
+    top: -25px;
+}
+
+#codeBtn:hover {
+    background: aliceblue;
+    cursor: pointer;
 }
 
 #decodeBox {
     width: 300px;
     height: 50px;
     color: rgb(255, 255, 255);
+    resize: none;
 }
 
 #decodeBtn {
     background-color: rgb(5, 141, 141);
+    position: relative;
+    top: -25px;
+}
+
+#decodeBtn:hover {
+    background: aliceblue;
+    cursor: pointer;
 }

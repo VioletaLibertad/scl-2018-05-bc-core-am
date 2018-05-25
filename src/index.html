@@ -7,25 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div id="base">
 
-  <div id="root">
-    <h2>CoDecodeApp</h2>
-    <p>Welcome message and instruccions. 
-      Este es un texto base sin ninguna finalidad mas que la 
-      de ocupar espacio y ser un texto de relleno para probar el P. 
-    </p>
-  </div>
-  
-  <div id="boxSet">
-    <input type="text" id="codeBox" placeholder="Escribe tu texto a CODIFICAR">
-    <button id="codeBtn">Codificar!</button>
-    <p id="codedText"></p>
-    <input type="text" id="decodeBox" placeholder="Escribe tu texto a DECODIFICAR">
-    <button id="decodeBtn">Descifrar!</button>
-    <p id="decodedText"></p>
-  </div>
-</div>
+  <section id="base">
+    <!-- Título e instrucciones -->
+    <div id="instructions">
+      <h2>CoDecodeApp</h2>
+      <p>Welcome message and instruccions. 
+        Este es un texto base sin ninguna finalidad mas que la 
+        de ocupar espacio y ser un texto de relleno para probar el P. 
+      </p>
+    </div>
+
+    <!-- Clave numerica de desplazamientos -->
+    <div id="key">
+        <span id="keyText">Clave:</span><input type="number" id="keyBtn" placeholder="Número">
+        <p></p>
+    </div>
+    
+    <!-- Cajas codificar y decodificar -->
+    <div id="boxSet">
+      <textarea name="text" id="codeBox" cols="30" rows="10" placeholder="Escribe tu texto a CODIFICAR"></textarea>
+      <button id="codeBtn">Codificar!</button>
+      <p id="codedText"></p>
+      <textarea name="text" id="decodeBox" cols="30" rows="10" placeholder="Escribe tu texto a DECODIFICAR"></textarea>
+      <button id="decodeBtn">Descifrar!</button>
+      <p id="decodedText"></p>
+    </div>
+
+</section>
+<div id="root"></div>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
