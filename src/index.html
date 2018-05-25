@@ -2,13 +2,30 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div id="base">
 
-  <div id="root"></div>
-
+  <div id="root">
+    <h2>CoDecodeApp</h2>
+    <p>Welcome message and instruccions. 
+      Este es un texto base sin ninguna finalidad mas que la 
+      de ocupar espacio y ser un texto de relleno para probar el P. 
+    </p>
+  </div>
+  
+  <div id="boxSet">
+    <input type="text" id="codeBox" placeholder="Escribe tu texto a CODIFICAR">
+    <button id="codeBtn">Codificar!</button>
+    <p id="codedText"></p>
+    <input type="text" id="decodeBox" placeholder="Escribe tu texto a DECODIFICAR">
+    <button id="decodeBtn">Descifrar!</button>
+    <p id="decodedText"></p>
+  </div>
+</div>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
