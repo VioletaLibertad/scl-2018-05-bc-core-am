@@ -1,83 +1,83 @@
 * {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(38, 38, 38);
-    position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(38, 38, 38);
+  position: relative;
 }
 
 #base {
-    border: 3px solid rgb(5, 141, 141); 
-    border-radius: 12px;
-    width: 700px;
-    height: 350px;
-    background-color: rgba(242, 242, 242);
-    margin: auto;
-    margin-top: 100px;
+  border: 3px solid rgb(5, 141, 141); 
+  border-radius: 12px;
+  width: 700px;
+  height: 390px;
+  background-color: rgba(242, 242, 242);
+  margin: auto;
+  margin-top: 100px;
 }
 
 #instructions {
-    background-color: rgba(242, 242, 242);
+  background-color: rgba(242, 242, 242);
 }
 
 h2 {
-    background-color: rgba(242, 242, 242);
-    text-shadow: 1px 1px rgb(85, 84, 84);
+  background-color: rgba(242, 242, 242);
+  text-shadow: 1px 1px rgb(85, 84, 84);
 }
 
 p {
-    background-color: rgba(242, 242, 242)
+  background-color: rgba(242, 242, 242)
 }
 
 #key {
-    background-color: rgba(242, 242, 242);
-    position: relative;
+  background-color: rgba(242, 242, 242);
+  position: relative;
 }
 
 #keyBtn {
-    color: rgba(242, 242, 242);
-    cursor: pointer;
+  color: rgba(242, 242, 242);
+  cursor: pointer;
 }
 
 #keyText {
-    background-color: rgba(242, 242, 242);
+  background-color: rgba(242, 242, 242);
 }
 
 #boxSet {
-    background-color: rgba(242, 242, 242);
+  background-color: rgba(242, 242, 242);
 }
 
 #codeBox {
-    width: 300px;
-    height: 50px;
-    color: rgb(255, 255, 255);
-    resize: none;
+  width: 300px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  resize: none;
 }
 
 #codeBtn {
-    background-color: rgb(5, 141, 141);
-    position: relative;
-    top: -25px;
+  background-color: rgb(5, 141, 141);
+  position: relative;
+  top: -25px;
 }
 
 #codeBtn:hover {
-    background: aliceblue;
-    cursor: pointer;
+  background: aliceblue;
+  cursor: pointer;
 }
 
 #decodeBox {
-    width: 300px;
-    height: 50px;
-    color: rgb(255, 255, 255);
-    resize: none;
+  width: 300px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  resize: none;
 }
 
 #decodeBtn {
-    background-color: rgb(5, 141, 141);
-    position: relative;
-    top: -25px;
+  background-color: rgb(5, 141, 141);
+  position: relative;
+  top: -25px;
 }
 
 #decodeBtn:hover {
-    background: aliceblue;
-    cursor: pointer;
+  background: aliceblue;
+  cursor: pointer;
 }
