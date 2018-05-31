@@ -1,26 +1,17 @@
-function code() {
-  let msgToCode = document.getElementById("codeBox").value;
-  document.getElementById("codedText").innerHTML = msgToCode;
-
+window.onload = () => {
+  document.getElementById("codeBtn").addEventListener("click", () => { 
+    let msgToCode = document.getElementById("codeBox").value;
+    let key = parseInt(document.getElementById("keyBtn").value);
+    let codedMsg = window.cipher.encode(msgToCode, key);
+    document.getElementById("codedText").innerHTML = codedMsg;
+  });
 }
+
+  
+/*HOLA en key=3 es KROD*/
+
 
 function decode() {
   let msgtoDecode = document.getElementById("decodeBox").value;
   document.getElementById("decodedText").innerHTML = msgtoDecode;
 }
-
-
-
-
-/*
-const str = "HOLA ESTE ES UN STRING";
-let result = "";
-
-for = (let i = 0; i < str.length; i++) {
-
-console.log('Esta es la iteración número: ' + i + ',letra: ' + str[i]);
-
-result += str[i].toLowerCase();
-console.log('El nuevo string: '+ result);
-
-}*/
