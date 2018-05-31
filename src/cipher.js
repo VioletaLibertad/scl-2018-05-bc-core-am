@@ -1,13 +1,13 @@
 window.cipher = {
+  //Codificar
   encode: (msgToCode, key) => {
-    
+    //Variables
     let msg = msgToCode.toUpperCase();
     let asciiMsg = "";
     let newAscii = "";
     let codedMsg = "";
-    
+    //Métodos
     for (let i = 0; i < msg.length; i++) {
-     // console.log('hola')
       asciiMsg = msg.charCodeAt(i);
       if (asciiMsg >= 65 && asciiMsg <= 90) {
         newAscii = (asciiMsg - 65 + key) % 26 + 65;
@@ -15,38 +15,23 @@ window.cipher = {
       }  
     }
     return codedMsg;
-    
   },
 
-
-  decode: () => {
-    /* Acá va tu código. Otro metodo*/
+  //Decodificar
+  decode: (msgToDecode, key) => {
+    //Variables
+    let msg2 = msgToDecode.toUpperCase();
+    let asciiMsg2 = "";
+    let newAscii2 = "";
+    let decodedMsg = "";
+    //Métodos
+    for (let i = 0; i < msg2.length; i++) {
+      asciiMsg2 = msg2.charCodeAt(i);
+      if (asciiMsg2 >= 65 && asciiMsg2 <= 90) {
+        newAscii2 = (asciiMsg2 - 65 - key) % 26 + 65;
+        decodedMsg += String.fromCharCode(newAscii2);
+      }
+    }
+    return decodedMsg;
   }
-}
-
-/* Acá va tu código. Estos son metodos del objeto cipher. 
-    Son acciones o comportamientos que puede tener un objeto*/
-
-/*
-function code() {
-  let msgToCode = document.getElementById("codeBox").value;
-  let key = document.getElementById("keyBtn").value;
-  let asciiMsg = "";
-  for (let i = 0; i < msgToCode.length; i++) {
-    asciiMsg = msgToCode.charCodeAt(i);
-    /*console.log(asciiMsg)*/
-  
-
-
-/*
-const str = "HOLA ESTE ES UN STRING";
-let result = "";
-
-for (let i = 0; i < str.length; i++) {
-
-console.log('Esta es la iteración número: ' + i + ',letra: ' + str[i]);
-
-result += str[i].toLowerCase();
-console.log('El nuevo string: '+ result);
-
-}*/
+};
