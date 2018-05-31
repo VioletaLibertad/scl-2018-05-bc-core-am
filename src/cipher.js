@@ -2,7 +2,7 @@ window.cipher = {
   //Codificar
   encode: (msgToCode, key) => {
     //Variables
-    let msg = msgToCode.toUpperCase();
+    let msg = msgToCode;
     let asciiMsg = "";
     let newAscii = "";
     let codedMsg = "";
@@ -14,7 +14,10 @@ window.cipher = {
         codedMsg += String.fromCharCode(newAscii);
       } else if (asciiMsg >= 32 && asciiMsg <= 64) {
         codedMsg += String.fromCharCode(asciiMsg);
-      } 
+      } else if (asciiMsg >= 97 && asciiMsg <=  122) {
+        newAscii = (asciiMsg - 97 + key) % 26 + 97;
+        codedMsg += String.fromCharCode(newAscii);
+      }
     }
     return codedMsg;
   },
@@ -22,7 +25,7 @@ window.cipher = {
   //Decodificar
   decode: (msgToDecode, key) => {
     //Variables
-    let msg2 = msgToDecode.toUpperCase();
+    let msg2 = msgToDecode;
     let asciiMsg2 = "";
     let newAscii2 = "";
     let decodedMsg = "";
@@ -34,6 +37,9 @@ window.cipher = {
         decodedMsg += String.fromCharCode(newAscii2);
       } else if (asciiMsg2 >= 32 && asciiMsg2 <= 64) {
         decodedMsg += String.fromCharCode(asciiMsg2);
+      } else if (asciiMsg2 >= 97 && asciiMsg2 <= 122) {
+        newAscii2 = (asciiMsg2 - 122 - key) % 26 + 122;
+        decodedMsg += String.fromCharCode(newAscii2);
       }
     }
     return decodedMsg;
